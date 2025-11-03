@@ -1,88 +1,23 @@
-<!DOCTYPE html>
-
-<html lang="zh-CN" data-content_root="./">
+<!doctype html>
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
 
-    <title>World Model documentation &#8212; World Model v1 文档</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
-    
-    <script src="_static/documentation_options.js?v=181ac3c6"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/translations.js?v=beaddf03"></script>
-    
-    <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="搜索" href="search.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="Related">
-      <h3>导航</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总索引"
-             accesskey="I">索引</a></li>
-        <li class="nav-item nav-item-0"><a href="#">World Model v1 文档</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">World Model documentation</a></li> 
-      </ul>
-    </div>  
+    <!-- 方案1：Meta Refresh，兼容性最好 -->
+    <meta http-equiv="refresh" content="0; url=../build/html/index.html">
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
-  <section id="world-model-documentation">
-<h1>World Model documentation<a class="headerlink" href="#world-model-documentation" title="Link to this heading">¶</a></h1>
-<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
-<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
-documentation for details.</p>
-<div class="toctree-wrapper compound">
-</div>
-</section>
+    <!-- 方案2：JS，带上原始 ?query 和 #hash -->
+    <script>
+      var target = "../build/html/index.html" + window.location.search + window.location.hash;
+      window.location.replace(target);
+    </script>
 
-
-            <div class="clearer"></div>
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-  <div role="note" aria-label="source link">
-    <h3>本页</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">显示源代码</a></li>
-    </ul>
-   </div>
-<search id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="提交" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="Related">
-      <h3>导航</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="总索引"
-             >索引</a></li>
-        <li class="nav-item nav-item-0"><a href="#">World Model v1 文档</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">World Model documentation</a></li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-    &#169; 版权所有 2025, 1.
-      由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
-    </div>
+    <!-- SEO：告诉搜索引擎目标地址 -->
+    <link rel="canonical" href="../build/html/index.html" />
+  </head>
+  <body>
+    正在跳转到文档主页……
+    <a href="../build/html/index.html">若未自动跳转，点此进入</a>
   </body>
 </html>
